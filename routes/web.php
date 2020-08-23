@@ -15,6 +15,9 @@
 //     return view('welcome');
 // });
 Route::get('/','Front\CategoryController@index')->name('welcome');
+Route::get('/news','Front\NewsController@index')->name('news');
+Route::get('/blog','Front\BlogController@index')->name('blog');
+
 
 Auth::routes();
 

@@ -18,9 +18,9 @@
                 <!-- menu links -->
                 <div class="menu-bar">
                   <ul class="menu-links">
-                    <li><a href="news.html">Noticias </a>
+                    <li><a href="{{route('news')}}">Noticias </a>
                     </li>
-                    <li><a href="blog.html" disabled> Blog </a>
+                    <li><a href="{{route('blog')}}"> Blog </a>
                     </li>
                     <li><a href="foro.html">Foro </a>
                     </li>
@@ -64,3 +64,4 @@
       <!-- menu end -->
     </div>
   </header>
+  
