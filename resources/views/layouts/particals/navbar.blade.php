@@ -18,17 +18,15 @@
                 <!-- menu links -->
                 <div class="menu-bar">
                   <ul class="menu-links">
-                    <li><a href="{{route('news')}}">Noticias </a>
+                    <li><a href="{{route('category')}}"> Comunidades </a>
                     </li>
-                    <li><a href="{{route('blog')}}"> Blog </a>
-                    </li>
-                    <li><a href="foro.html">Foro </a>
+                    <li><a href="{{route('help')}}">Ayuda </a>
                     </li>
                     <!-- <li><a href="faqs.html">Preguntas </a>
                     </li>
                     <li><a href="faqs.html">Nosotros </a>
                     </li> -->
-                    <li><a href="login.html" type="button" class="btn btn-warning btn-sm text-dark">Ingresar</a>
+                    <li><a href="{{route('login')}}" type="button" class="btn btn-warning btn-sm text-dark">Ingresar</a>
                     </li>
 
                     <div class="search-cart">

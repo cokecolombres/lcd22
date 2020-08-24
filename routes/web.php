@@ -17,6 +17,9 @@
 Route::get('/','Front\CategoryController@index')->name('welcome');
 Route::get('/news','Front\NewsController@index')->name('news');
 Route::get('/blog','Front\BlogController@index')->name('blog');
+Route::get('/foro','Front\ForoController@index')->name('foro');
+Route::get('/help','Front\HelpController@index')->name('help');
+Route::get('/category','Front\Category2Controller@index')->name('category');
 
 
 Auth::routes();

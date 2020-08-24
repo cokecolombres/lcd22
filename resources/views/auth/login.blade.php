@@ -70,4 +70,65 @@
         </div>
     </div>
 </div>
+
+<section class="login-box-main height-100vh page-section-ptb" style="background: url(images/login/07.jpg);">
+    <div class="login-box-main-middle">
+      <div class="container">
+        <div class="row justify-content-center no-gutter">
+          <div class="col-lg-2 col-md-4">
+            <div class="login-box-left   bg-gray2">
+              <img class="logo-small" src="images/logo-05.png" alt="">
+                 <ul class="nav">
+                   <li class="active"><a href="#"> <i class="ti-user"></i> Iniciar sesión</a></li>
+                   <li><a href="{{route('register')}}"> <i class="ti-pencil-alt"></i> Registro</a></li>
+                </ul>
+               <div class="social-icons color-hover clearfix pos-bot pb-30 pl-30">
+                <ul>
+                  <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 theme-bg">
+           <div class="login-box pos-r text-white login-box-theme">
+            <h2 class="text-dark mb-20">Bienvenid@ a </h2>
+            <h4 class="text-dark mb-20">LA COMPAÑÍA DIGITAL</h4>
+            <p class="mb-10 text-muted">Impulsá tu vida con tecnología </p>
+            <p class="text-dark">Somos tecnología y compañía.</p>
+            <p class="text-dark">La plataforma digital de aprendizaje online efectivo.</p>
+            <ul class="list-unstyled pos-bot pb-40">
+              <li class="list-inline-item"><a class="text-white" href="#"> Términos de uso</a> </li>
+              <li class="list-inline-item"><a class="text-white" href="#"> Privacidad</a></li>
+            </ul>
+           </div>
+          </div>
+          <div class="col-md-4">
+            <div class="login-box pb-50 clearfix  bg-gray2">
+              <h3 class="mb-30">Iniciar sesión</h3>
+              <div class="section-field mb-20">
+                <label class="mb-10" for="name">Nombre de usuario* </label>
+                <input id="name" class="web form-control" type="text" placeholder="Usuario" name="web">
+              </div>
+              <div class="section-field mb-20">
+               <label class="mb-10" for="Password">Contraseña* </label>
+                 <input id="Password" class="Password form-control" type="password" placeholder="Contraseña" name="Password">
+              </div>
+              <div class="section-field">
+               <div class="custom-control custom-checkbox mb-30">
+                  <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                  <label class="custom-control-label" for="customControlAutosizing">Recordarme</label>
+                </div>
+              </div>
+              <a href="index2.html" class="button">
+                <i class="fa fa-check"></i>
+                <span>Entrar</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 @endsection

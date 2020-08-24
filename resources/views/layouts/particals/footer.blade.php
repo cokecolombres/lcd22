@@ -19,10 +19,9 @@
       <div class="footer-useful-link footer-hedding">
         <h6 class="text-white mb-30 mt-10 text-uppercase">Información</h6>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="about.html">Servicios</a></li>
-          <li><a href="about.html">Nosotros</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="{{route('news')}}">Noticias </a></li>
+          <li><a href="{{route('blog')}}">Blog </a></li>
+          <li><a href="{{route('foro')}}">Foro </a></li>
           <!-- <li><a href="#">Oportunidades</a></li> -->
         </ul>
       </div>
@@ -31,10 +30,9 @@
       <div class="footer-useful-link footer-hedding">
         <h6 class="text-white mb-30 mt-10 text-uppercase">Información</h6>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
+          <li><a href="{{route('help')}}">Ayuda </a></li>
           <li><a href="about.html">Servicios</a></li>
           <li><a href="about.html">Nosotros</a></li>
-          <li><a href="blog.html">Blog</a></li>
           <!-- <li><a href="#">Oportunidades</a></li> -->
         </ul>
       </div>
