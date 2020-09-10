@@ -12,47 +12,51 @@
                 <!-- menu logo -->
                 <ul class="menu-logo">
                   <li>
-                    <a href="index.html"><img id="logo_img" src="{{asset('lacompaniadigital/images/logo-06.png')}}" alt="logo"> </a>
+                    <a href=""><img id="logo_img" src="{{asset('lacompaniadigital/images/logo-06.png')}}" alt="logo"> </a>
                   </li>
                 </ul>
                 <!-- menu links -->
                 <div class="menu-bar">
-                  <ul class="menu-links">
-                    <li><a href="{{route('category')}}"> Comunidades </a>
+                  <ul class="menu-links mr-3">
+                    <li><a href="{{route('communities')}}"> Comunidades </a>
                     </li>
                     <li><a href="{{route('help')}}">Ayuda </a>
                     </li>
-                    <!-- <li><a href="faqs.html">Preguntas </a>
-                    </li>
-                    <li><a href="faqs.html">Nosotros </a>
-                    </li> -->
                     <li><a href="{{route('login')}}" type="button" class="btn btn-warning btn-sm text-dark">Ingresar</a>
                     </li>
-
+                  </ul>
                     <div class="search-cart">
-                      <div class="search">
-                        <a class="search-btn not_click" href="javascript:void(0);"></a>
-                          <div class="search-box not-click">
-                             <form action="search.html" method="get">
-                              <input type="text" class="not-click form-control" name="search" placeholder="Buscar.." value="">
-                              <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>
-                            </form>
-                       </div>
+                      
+                      <div class="shpping-cart">
+                        <a class="cart-btn" href="#">
+                          <i class="fa fa-user-circle-o xl"></i>
+                        </a>
+                        <div class="cart">
+                          <div class="card-body ">
+                            <div class="product left clearfix">
+                              <div class="product-image">
+                                <a href="#"><img class="img-fluid mx-auto" alt="" src="images/shop/01.jpg">
+                                </a>
+                              </div>
+                              <div class="product-description">
+                                <p class="font-weight-bold">¡Hola, Tomás!</p> 
+                                <a href="{{route('profile')}}">Ver mi perfil</a>
+                              </div>
+                            </div>
+                         
+                          </div>
+                          <div class="list-group list-unstyled">
+                            
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-check mr-3"></i> Comunidades</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-user mr-3"></i> Mi cuenta</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-question-circle mr-3"></i> Ayuda </a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-close mr-3"></i> Cerrar Sesión</a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <!-- <li><a href="services.html"> Servicios <i class="fa fa-angle-down fa-indicator"></i></a>
-                      <ul class="drop-down-multilevel">
-                        <li><a href="service-web.html"><i class="fa fa-code"></i> Desarrollo & Diseño Web </a></li>
-                        <li><a href="service-design.html"><i class="fa fa-paint-brush"></i>Diseño Gráfico </a></li>
-                        <li><a href="service-marketing.html"><i class="fa fa-search"></i> Marketing Digital </a></li>
-                        <li><a href="service-content.html"><i class="fa fa-play-circle"></i> Estrategias de Contenidos </a></li>
-                        <li class="divider"></li>
-                        <li><a href="service-advisory.html"><i class="fa fa-handshake-o"></i> Asesoría  </a></li>
-                        <li><a href="service-management.html"><i class="fa fa-list-ol"></i> Gestion de proyectos  </a></li>
-                        <li class="divider"></li>
-                      </ul>
-                    </li> -->
-                  </ul>
+                    
+                    
                 </div>
               </div>
             </div>
@@ -62,4 +66,3 @@
       <!-- menu end -->
     </div>
   </header>
-  

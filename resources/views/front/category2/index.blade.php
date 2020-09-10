@@ -5,7 +5,7 @@
   <div class="">
     <div class="jumbotron jumbotron-fluid bg-dark mb-0">
       <div class="container">
-        <h3 class="text-white display-5 mt-50">No es sólo una comunidad, <br> es LA COMPAÑÍA <span class="theme-color">DIGITAL</span>.</h3>
+        <h3 class="text-white display-5 mt-50">No es sóla sdlakdlakdso una comunidad, <br> es LA COMPAÑÍA <span class="theme-color">DIGITAL</span>.</h3>
         <p class="text-white lead">De personas unidas por sus mismos intereses.</p>
         <a href="{{route('login')}}" type="button" class="btn btn-warning text-dark">Quiero ser parte</a>
       </div>
@@ -20,7 +20,7 @@
         <h3 class="text-dark pt-10">¿Qué tipo de comunidades  <span class="theme-bg text-dark"> te interesan</span> ?</h3>
         <div class="row mt-20">
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <a href="#">
+            <a href="">
               <div class="card bg-gray2">
                 <div class="card-body">
                   <div class="feature-text left-icon">
@@ -37,7 +37,7 @@
             </a>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <a href="#">
+            <a href="">
             <div class="card bg-gray2">
               <div class="card-body">
                 <div class="feature-text left-icon">
@@ -54,7 +54,7 @@
             </a>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <a href="#">
+            <a href="">
             <div class="card bg-gray2">
               <div class="card-body">
                 <div class="feature-text left-icon">
@@ -73,7 +73,7 @@
         </div>
         <div class="row mt-20">
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <a href="#">
+            <a href="">
             <div class="card bg-gray2">
               <div class="card-body">
                 <div class="feature-text left-icon">
@@ -90,7 +90,7 @@
             </a>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <a href="#">
+            <a href="">
             <div class="card bg-gray2">
               <div class="card-body">
                 <div class="feature-text left-icon">
@@ -107,7 +107,7 @@
             </a>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <a href="#">
+            <a href="">
             <div class="card bg-gray2">
               <div class="card-body">
                 <div class="feature-text left-icon">

@@ -4,17 +4,8 @@ namespace App\Http\Controllers\Front;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Category;
-use App\Post;
-use App\Tag;
-use App\User;
-use App\Profile;
 
-//Solo se utiliza para APIs
-use App\Resources\PostResource;
-use App\Resources\PostCollection;
-
-class BlogController extends Controller
+class ProfileController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,8 +14,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $posts= Post::with('category', 'user', 'tags')->paginate(10);
-        return view('front.blog.index', compact('posts'));
+       return view('front.profile.index');
     }
 
     /**
@@ -54,15 +44,11 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    
-
-    public function show($slug)
+    public function show($id)
     {
-        $post = Post::where('slug', $slug)->first();
-        $user_post = Post::where('user_id',$post->user_id)->where('id', '!=', $post->id)->paginate(4);
-        $related_posts = Post::where('category_id',$post->category_id)->where('id','!=',$post->id)->paginate(6);
-        return view('front.blog.show', compact('post','user_post','related_posts'));
+        //
     }
+
     /**
      * Show the form for editing the specified resource.
      *

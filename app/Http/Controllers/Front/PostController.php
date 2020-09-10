@@ -6,15 +6,10 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Category;
 use App\Post;
-use App\Tag;
 use App\User;
-use App\Profile;
+use App\Tag;
 
-//Solo se utiliza para APIs
-use App\Resources\PostResource;
-use App\Resources\PostCollection;
-
-class BlogController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,8 +18,11 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $posts= Post::with('category', 'user', 'tags')->paginate(10);
-        return view('front.blog.index', compact('posts'));
+        $categories= Category::orderBy('name', 'ASC')->paginate(10);
+        $last_posts= Post::orderBy('created_at', 'DESC')->with('category')->paginate(12);
+        $last_categories= Category::orderBy('created_at', 'DESC')->paginate(10);
+        return view('welcome', compact('categories', 'last_posts', 'last_categories'));
+    //    return view('front.category.index');
     }
 
     /**
@@ -54,8 +52,6 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    
-
     public function show($slug)
     {
         $post = Post::where('slug', $slug)->first();
@@ -63,6 +59,7 @@ class BlogController extends Controller
         $related_posts = Post::where('category_id',$post->category_id)->where('id','!=',$post->id)->paginate(6);
         return view('front.blog.show', compact('post','user_post','related_posts'));
     }
+
     /**
      * Show the form for editing the specified resource.
      *

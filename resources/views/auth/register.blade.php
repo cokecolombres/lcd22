@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+
+<section class="page-title bg-dark parallax pb-10 pt-90" data-jarallax='{"speed": 0.6}' style="background-image: url(images/bg/programming2.jpg);">
+    
+</section>
+
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -73,7 +78,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <section class="login-box-main height-100vh page-section-ptb" style="background: url(images/login/07.jpg);">
     <div class="login-box-main-middle">

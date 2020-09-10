@@ -14,12 +14,19 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/','Front\CategoryController@index')->name('welcome');
-Route::get('/news','Front\NewsController@index')->name('news');
-Route::get('/blog','Front\BlogController@index')->name('blog');
-Route::get('/foro','Front\ForoController@index')->name('foro');
-Route::get('/help','Front\HelpController@index')->name('help');
-Route::get('/category','Front\Category2Controller@index')->name('category');
+
+//Prefijo para vistas de front
+Route::get('/','Front\PostController@index')->name('welcome');
+Route::prefix('/')->group(function() {
+    Route::get('/news','Front\NewsController@index')->name('news');
+    Route::get('/blog','Front\BlogController@index')->name('blog');
+    Route::get('/blog/{slug}','Front\BlogController@show')->name('show_post');
+    Route::get('/foro','Front\ForoController@index')->name('foro');
+    Route::get('/help','Front\HelpController@index')->name('help');
+    Route::get('/profile','Front\ProfileController@index')->name('profile');
+    Route::get('/communities','Front\CommunitiesController@index')->name('communities');
+});
+
 
 
 Auth::routes();
